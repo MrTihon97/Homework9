@@ -17,4 +17,6 @@ int SumNumbers(int m, int n)
     else if (m < n) return n + SumNumbers(m, n - 1); // Если M<N
     else return n + SumNumbers(m, n + 1);            // Если M>N
 }
-Console.WriteLine($"{SumNumbers(m, n)}");
+
+int sum = SumNumbers(m, n);
+Console.WriteLine($"{sum}");
